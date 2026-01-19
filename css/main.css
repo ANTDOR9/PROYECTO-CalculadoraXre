@@ -1,0 +1,57 @@
+/* =========================
+   RESET BÁSICO
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   VARIABLES GLOBALES
+========================= */
+:root {
+    --bg-color: #0e0e11;
+    --primary-color: #6cf2c2;
+    --secondary-color: #1f1f26;
+    --text-color: #eaeaea;
+    --accent-color: #ff4d6d;
+}
+
+/* =========================
+   BODY GENERAL
+========================= */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   TÍTULOS
+========================= */
+h1, h2, h3 {
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* =========================
+   SECCIONES
+========================= */
+.section {
+    min-height: 100vh;
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
