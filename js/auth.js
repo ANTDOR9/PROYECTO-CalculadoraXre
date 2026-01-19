@@ -25,3 +25,11 @@ loginForm.addEventListener("submit", e => {
         msg.style.color = "var(--accent-color)";
     }
 });
+const logoutBtn = document.getElementById("logoutBtn");
+
+if (logoutBtn) {
+    logoutBtn.addEventListener("click", () => {
+        localStorage.removeItem("logged");
+        window.location.href = "login.html";
+    });
+}
