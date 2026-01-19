@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Web Frontend</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+    <!-- 🎵 Música de fondo -->
+    <audio id="bgMusic" src="assets/music/theme.mp3" loop></audio>
+
+    <!-- 🧭 Header / Navegación -->
+    <header class="header">
+        <h1 class="logo">Mi Proyecto</h1>
+        <nav class="nav">
+            <a href="#home">Inicio</a>
+            <a href="#galeria">Galería</a>
+            <a href="#interactivo">Interactivo</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- 🏠 HOME -->
+    <section id="home" class="section home">
+        <div class="home-content">
+            <h2>Bienvenido</h2>
+            <p>Proyecto frontend con estilo y personalidad</p>
+
+            <button id="musicBtn" class="btn-primary">
+                Reproducir Música
+            </button>
+        </div>
+    </section>
+
+    <!-- 🖼️ GALERÍA -->
+    <section id="galeria" class="section galeria">
+        <h2>Galería</h2>
+
+        <div class="gallery-buttons">
+            <button class="img-button">
+                <img src="assets/images/1.png" alt="Botón 1">
+            </button>
+
+            <button class="img-button">
+                <img src="assets/images/2.png" alt="Botón 2">
+            </button>
+        </div>
+    </section>
+
+    <!-- 🔢 ZONA INTERACTIVA -->
+    <section id="interactivo" class="section interactivo">
+        <h2>Zona Interactiva</h2>
+
+        <div class="number-buttons">
+            <button class="num-btn">1</button>
+            <button class="num-btn">2</button>
+            <button class="num-btn">3</button>
+        </div>
+    </section>
+
+    <!-- 📩 CONTACTO / FOOTER -->
+    <footer id="contacto" class="footer">
+        <p>© 2026 - Proyecto Frontend</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+    <script src="js/music.js"></script>
+</body>
+</html>
