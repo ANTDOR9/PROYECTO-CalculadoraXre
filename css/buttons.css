@@ -1,0 +1,91 @@
+/* =========================
+   BOTÓN PRINCIPAL
+========================= */
+.btn-primary {
+    padding: 14px 40px;
+    background: linear-gradient(
+        135deg,
+        var(--primary-color),
+        var(--accent-color)
+    );
+    border: none;
+    border-radius: 30px;
+    color: #000;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(108, 242, 194, 0.3);
+}
+
+.btn-primary:active {
+    transform: scale(0.96);
+}
+
+/* =========================
+   BOTONES CON IMAGEN
+========================= */
+.img-button {
+    width: 140px;
+    height: 140px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Glow al pasar el mouse */
+.img-button::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    box-shadow: 0 0 0 rgba(108, 242, 194, 0.6);
+    transition: box-shadow 0.3s ease;
+}
+
+.img-button:hover {
+    transform: translateY(-8px) scale(1.03);
+}
+
+.img-button:hover::after {
+    box-shadow: 0 0 25px rgba(108, 242, 194, 0.6);
+}
+
+/* =========================
+   BOTONES NUMÉRICOS
+========================= */
+.num-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--primary-color);
+    color: var(--text-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.num-btn:hover {
+    background-color: var(--primary-color);
+    color: #000;
+    transform: translateY(-4px);
+}
+
+.num-btn:active {
+    transform: scale(0.9);
+}
