@@ -1,3 +1,14 @@
+
+// =========================
+// PROTECCIÓN DE SESIÓN
+// =========================
+
+if (localStorage.getItem("logged") !== "true") {
+    window.location.href = "login.html";
+}
+
+
+
 // =========================
 // SONIDO DE CLIC
 // =========================
