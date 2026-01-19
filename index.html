@@ -16,20 +16,21 @@
     <!-- 🎵 Música de fondo -->
     <audio id="bgMusic" src="assets/music/theme.mp3" loop></audio>
 
-    <!-- 🧭 Header / Navegación -->
+    <!-- 🧭 HEADER / NAVEGACIÓN -->
     <header class="header">
         <h1 class="logo">Mi Proyecto</h1>
+
         <nav class="nav">
             <a href="#home">Inicio</a>
             <a href="#galeria">Galería</a>
             <a href="#interactivo">Interactivo</a>
-            <a href="#contacto">Contacto</a>
+            <a href="#comentarios">Comentarios</a>
             <button id="logoutBtn" class="btn-primary">Salir</button>
         </nav>
     </header>
 
     <!-- 🏠 HOME -->
-    <section id="home" class="section home">
+    <section id="home" class="section home reveal">
         <div class="home-content">
             <h2>Bienvenido</h2>
             <p>Proyecto frontend con estilo y personalidad</p>
@@ -41,7 +42,7 @@
     </section>
 
     <!-- 🖼️ GALERÍA -->
-    <section id="galeria" class="section galeria">
+    <section id="galeria" class="section galeria reveal">
         <h2>Galería</h2>
 
         <div class="gallery-buttons">
@@ -56,7 +57,7 @@
     </section>
 
     <!-- 🔢 ZONA INTERACTIVA -->
-    <section id="interactivo" class="section interactivo">
+    <section id="interactivo" class="section interactivo reveal">
         <h2>Zona Interactiva</h2>
 
         <div class="number-buttons">
@@ -65,21 +66,21 @@
             <button class="num-btn">3</button>
         </div>
     </section>
-    
-<!-- 💬 COMENTARIOS -->
-<section id="comentarios" class="section comentarios">
-    <h2>Comentarios</h2>
 
-    <form id="commentForm" class="comment-form">
-        <input type="text" id="username" placeholder="Tu nombre" required>
-        <textarea id="commentText" placeholder="Escribe tu comentario..." required></textarea>
-        <button type="submit" class="btn-primary">Comentar</button>
-    </form>
+    <!-- 💬 COMENTARIOS -->
+    <section id="comentarios" class="section comentarios reveal">
+        <h2>Comentarios</h2>
 
-    <div id="commentsList" class="comments-list"></div>
-</section>
+        <form id="commentForm" class="comment-form">
+            <input type="text" id="username" placeholder="Tu nombre" required>
+            <textarea id="commentText" placeholder="Escribe tu comentario..." required></textarea>
+            <button type="submit" class="btn-primary">Comentar</button>
+        </form>
 
-    <!-- 📩 CONTACTO / FOOTER -->
+        <div id="commentsList" class="comments-list"></div>
+    </section>
+
+    <!-- 📩 FOOTER -->
     <footer id="contacto" class="footer">
         <p>© 2026 - Proyecto Frontend</p>
     </footer>
@@ -88,6 +89,5 @@
     <script src="js/main.js"></script>
     <script src="js/music.js"></script>
     <script src="js/comments.js"></script>
-
 </body>
 </html>
