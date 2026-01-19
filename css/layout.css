@@ -166,3 +166,19 @@
     margin-top: 10px;
     font-size: 0.85rem;
 }
+
+/* =========================
+   LOGIN
+========================= */
+.login {
+    text-align: center;
+}
+
+.login h2 {
+    margin-bottom: 30px;
+}
+
+#loginMsg {
+    margin-top: 20px;
+    font-size: 0.85rem;
+}
