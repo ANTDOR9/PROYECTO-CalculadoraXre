@@ -31,15 +31,49 @@
 
     <!-- 🏠 HOME -->
     <section id="home" class="section home reveal">
-        <div class="home-content">
-            <h2>Bienvenido</h2>
-            <p>Proyecto frontend con estilo y personalidad</p>
 
-            <button id="musicBtn" class="btn-primary">
-                Reproducir Música
-            </button>
+        <div class="home-container">
+
+            <!-- 🧮 CALCULADORA (PROTAGONISTA) -->
+            <div class="calculator">
+
+                <input type="text" class="calc-display" disabled value="0">
+
+                <div class="calc-buttons">
+                    <button class="calc-btn">7</button>
+                    <button class="calc-btn">8</button>
+                    <button class="calc-btn">9</button>
+                    <button class="calc-btn op">÷</button>
+
+                    <button class="calc-btn">4</button>
+                    <button class="calc-btn">5</button>
+                    <button class="calc-btn">6</button>
+                    <button class="calc-btn op">×</button>
+
+                    <button class="calc-btn">1</button>
+                    <button class="calc-btn">2</button>
+                    <button class="calc-btn">3</button>
+                    <button class="calc-btn op">−</button>
+
+                    <button class="calc-btn">0</button>
+                    <button class="calc-btn">.</button>
+                    <button class="calc-btn equal">=</button>
+                    <button class="calc-btn op">+</button>
+                </div>
+
+            </div>
+
+            <!-- 🎵 CONTROL DE MÚSICA -->
+            <div class="music-control">
+                <button id="musicBtn" class="btn-primary">
+                    ▶ Música
+                </button>
+            </div>
+
         </div>
+
     </section>
+
 
     <!-- 🖼️ GALERÍA -->
     <section id="galeria" class="section galeria reveal">
@@ -89,5 +123,7 @@
     <script src="js/main.js"></script>
     <script src="js/music.js"></script>
     <script src="js/comments.js"></script>
+    <script src="js/calculator.js"></script>
+
 </body>
 </html>
