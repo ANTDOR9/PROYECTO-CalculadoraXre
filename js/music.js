@@ -7,16 +7,13 @@ const musicBtn = document.getElementById("musicBtn");
 
 let isPlaying = false;
 
-// Click en botón
 musicBtn.addEventListener("click", () => {
     if (!isPlaying) {
         music.play();
-        music.volume = 0.5; // volumen suave
-        musicBtn.textContent = "Pausar Música";
-        isPlaying = true;
+        musicBtn.textContent = "⏸ Pausar música";
     } else {
         music.pause();
-        musicBtn.textContent = "Reproducir Música";
-        isPlaying = false;
+        musicBtn.textContent = "▶ Música";
     }
+    isPlaying = !isPlaying;
 });
