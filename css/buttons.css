@@ -30,8 +30,14 @@
    BOTONES CON IMAGEN
 ========================= */
 .img-button {
-    width: 140px;
-    height: 140px;
+    background: none;
+    border: none;
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+
+
+
     border-radius: 20px;
     overflow: hidden;
     border: none;
@@ -44,7 +50,7 @@
 .img-button img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /* Glow al pasar el mouse */
@@ -89,3 +95,8 @@
 .num-btn:active {
     transform: scale(0.9);
 }
+
+.section {
+    background: rgba(0, 0, 0, 0.6);
+}
+
